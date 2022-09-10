@@ -10,11 +10,11 @@ export const callback=passport.authenticate( 'google', {
 });
 
 export const success=(req,res)=>{
-    res.redirect('http://localhost:3000/user')
+    res.redirect('https://cool-frangipane-8ecd98.netlify.app/user')
 }
 
 export const failure=(req,res)=>{
-    res.redirect('http://localhost:3000')
+    res.redirect('https://cool-frangipane-8ecd98.netlify.app')
 }
 
 export const isLoggedIn=(req,res,next)=>{
@@ -32,7 +32,7 @@ export const logout=(req,res)=>{
         }else{
             req.logout((err)=>{
                 console.log(err);
-                res.redirect("http://localhost:3000");
+                res.redirect("https://cool-frangipane-8ecd98.netlify.app");
             });
         }
     })
