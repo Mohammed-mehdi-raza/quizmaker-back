@@ -7,7 +7,7 @@ const GOOGLE_CLIENT_SECRET="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";
 passport.use(new GoogleStrategy({
     clientID:     GOOGLE_CLIENT_ID,
     clientSecret: GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:5000/google/callback",
+    callbackURL: "https://quiz-maker12.herokuapp.com/google/callback",
     passReqToCallback : true
   },
   function(request, accessToken, refreshToken, profile, done) {
